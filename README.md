@@ -1,3 +1,23 @@
+## Skypey Chat Application
+
+Build this application using following [tutorial](https://www.freecodecamp.org/news/understanding-redux-the-worlds-easiest-guide-to-beginning-redux-c695f45546f6/).</br>
+I built this application while learnig Redux for React. </br>
+My learnings are as follows
+
+- Actions - change in state of application
+- Reducer - changes the state of app based on action
+- Reducer and Store are in sync
+- Redux Store - States are saved
+- Plan application development process before jumping into code
+- Always try to keep your state normalize
+- Always take time in designing the state object
+
+I also got to learn baout ReduX principles
+
+- Have a single source of truth
+- State is always readonly(except reducers)
+- To transform the state we write pure reducers
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
