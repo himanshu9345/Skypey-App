@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Skypey-App/precache-manifest.0c885b60a145939915d9fa636acf22ce.js"
+  "/Skypey-App/precache-manifest.2c0b9348c9894eb2210740eada3e8d5f.js"
 );
 
 self.addEventListener('message', (event) => {
