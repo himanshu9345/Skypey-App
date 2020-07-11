@@ -2,6 +2,8 @@ import {
   SET_ACTIVE_USER_ID,
   SET_TYPING_VALUE,
   SEND_MESSAGE,
+  SUBMIT_EDITED_MESSAGE,
+  EDIT_MESSAGE,
 } from "./constants/action-types";
 
 export const setActiveUserId = (id) => ({
@@ -19,5 +21,22 @@ export const sendMessage = (message, userId) => ({
   payload: {
     message,
     userId,
+  },
+});
+
+export const saveClickedMessage = (messageId, userId) => ({
+  type: EDIT_MESSAGE,
+  payload: {
+    userId,
+    messageId,
+  },
+});
+
+export const writeEditedMessage = (userId, messageId, message) => ({
+  type: SUBMIT_EDITED_MESSAGE,
+  payload: {
+    userId,
+    messageId,
+    message,
   },
 });
