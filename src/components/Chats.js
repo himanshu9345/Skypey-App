@@ -8,13 +8,10 @@ const Chat = ({ message }) => {
   const { text, is_user_msg, is_edited, number } = message;
   return (
     <span className={`Chat ${is_user_msg ? "is-user-msg" : ""}`}>
-      {is_user_msg ? (
-        <button id="x" onClick={() => handleDelete(number)}>
-          Delete
-        </button>
-      ) : (
-        ""
-      )}
+      <button id="x" onClick={() => handleDelete(number)}>
+        Delete
+      </button>
+
       <div onClick={is_user_msg ? () => handleEdit(text, number) : null}>
         {text}
         {is_edited ? " (edited)" : ""}
