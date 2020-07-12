@@ -2,6 +2,7 @@ import { getMessages } from "../static-data";
 import {
   SEND_MESSAGE,
   SUBMIT_EDITED_MESSAGE,
+  DELETE_MESSAGE,
 } from "../actions/constants/action-types";
 import _ from "lodash";
 
@@ -41,6 +42,13 @@ export default function messages(state = getMessages(10), action) {
           },
         },
       };
+    }
+    case DELETE_MESSAGE: {
+      const { userId, messageId } = action.payload;
+      const allUserMsgs = state[userId];
+      const messageRemoved = _.omit(allUserMsgs, messageId);
+      // console.log(messageRemoved);
+      return { ...state, [userId]: messageRemoved };
     }
     default: {
       return state;

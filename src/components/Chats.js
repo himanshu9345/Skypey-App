@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { setTypingValue, saveClickedMessage } from "../actions";
+import { setTypingValue, saveClickedMessage, deleteMessage } from "../actions";
 
 import "./Chats.css";
 import store from "../store";
@@ -7,12 +7,18 @@ import store from "../store";
 const Chat = ({ message }) => {
   const { text, is_user_msg, is_edited, number } = message;
   return (
-    <span
-      onClick={is_user_msg ? () => handleEdit(text, number) : null}
-      className={`Chat ${is_user_msg ? "is-user-msg" : ""}`}
-    >
-      {text}
-      {is_edited ? " (edited)" : ""}
+    <span className={`Chat ${is_user_msg ? "is-user-msg" : ""}`}>
+      {is_user_msg ? (
+        <button id="x" onClick={() => handleDelete(number)}>
+          Delete
+        </button>
+      ) : (
+        ""
+      )}
+      <div onClick={is_user_msg ? () => handleEdit(text, number) : null}>
+        {text}
+        {is_edited ? " (edited)" : ""}
+      </div>
     </span>
   );
 };
@@ -47,6 +53,11 @@ function handleEdit(message, messageId) {
   const { activeUserId } = store.getState();
   store.dispatch(setTypingValue(message));
   store.dispatch(saveClickedMessage(messageId, activeUserId));
+}
+
+function handleDelete(messageId) {
+  const { activeUserId } = store.getState();
+  store.dispatch(deleteMessage(activeUserId, messageId));
 }
 
 export default Chats;

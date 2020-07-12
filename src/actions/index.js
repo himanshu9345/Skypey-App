@@ -4,6 +4,7 @@ import {
   SEND_MESSAGE,
   SUBMIT_EDITED_MESSAGE,
   EDIT_MESSAGE,
+  DELETE_MESSAGE,
 } from "./constants/action-types";
 
 export const setActiveUserId = (id) => ({
@@ -38,5 +39,13 @@ export const writeEditedMessage = (userId, messageId, message) => ({
     userId,
     messageId,
     message,
+  },
+});
+
+export const deleteMessage = (userId, messageId) => ({
+  type: DELETE_MESSAGE,
+  payload: {
+    userId,
+    messageId,
   },
 });
