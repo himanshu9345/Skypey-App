@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Skypey-App/static/css/main.5b83be05.chunk.css",
-    "main.js": "/Skypey-App/static/js/main.3fc24543.chunk.js",
-    "main.js.map": "/Skypey-App/static/js/main.3fc24543.chunk.js.map",
+    "main.css": "/Skypey-App/static/css/main.75717df0.chunk.css",
+    "main.js": "/Skypey-App/static/js/main.28f3028e.chunk.js",
+    "main.js.map": "/Skypey-App/static/js/main.28f3028e.chunk.js.map",
     "runtime-main.js": "/Skypey-App/static/js/runtime-main.49205306.js",
     "runtime-main.js.map": "/Skypey-App/static/js/runtime-main.49205306.js.map",
     "static/js/2.21acb6e8.chunk.js": "/Skypey-App/static/js/2.21acb6e8.chunk.js",
     "static/js/2.21acb6e8.chunk.js.map": "/Skypey-App/static/js/2.21acb6e8.chunk.js.map",
     "index.html": "/Skypey-App/index.html",
-    "precache-manifest.2c0b9348c9894eb2210740eada3e8d5f.js": "/Skypey-App/precache-manifest.2c0b9348c9894eb2210740eada3e8d5f.js",
+    "precache-manifest.e738eca38072ed53b1d733fb2eab3706.js": "/Skypey-App/precache-manifest.e738eca38072ed53b1d733fb2eab3706.js",
     "service-worker.js": "/Skypey-App/service-worker.js",
-    "static/css/main.5b83be05.chunk.css.map": "/Skypey-App/static/css/main.5b83be05.chunk.css.map",
+    "static/css/main.75717df0.chunk.css.map": "/Skypey-App/static/css/main.75717df0.chunk.css.map",
     "static/js/2.21acb6e8.chunk.js.LICENSE.txt": "/Skypey-App/static/js/2.21acb6e8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.49205306.js",
     "static/js/2.21acb6e8.chunk.js",
-    "static/css/main.5b83be05.chunk.css",
-    "static/js/main.3fc24543.chunk.js"
+    "static/css/main.75717df0.chunk.css",
+    "static/js/main.28f3028e.chunk.js"
   ]
 }
