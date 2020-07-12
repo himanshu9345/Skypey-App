@@ -1,7 +1,7 @@
 ## Skypey Chat Application
 
 Build this application using following [tutorial](https://www.freecodecamp.org/news/understanding-redux-the-worlds-easiest-guide-to-beginning-redux-c695f45546f6/).</br>
-I built this application while learnig Redux for React. </br>
+I built this [application](https://himanshu9345.github.io/Skypey-App/) while learnig Redux for React. </br>
 My learnings are as follows
 
 - Actions - change in state of application
